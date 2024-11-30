@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinner Options</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .recipe-list {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .recipe-list h1 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 2.5rem;
+            color: #b58900;
+            margin-bottom: 20px;
+        }
+
+        .recipe-list ul {
+            list-style: none;
+        }
+
+        .recipe-list ul li {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .recipe-list ul li a {
+            text-decoration: none;
+            color: #268bd2;
+            transition: color 0.3s;
+        }
+
+        .recipe-list ul li a:hover {
+            color: #2aa198;
+        }
+
+        .recipe {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .recipe:nth-child(odd) {
+            background: #fff4e6;
+        }
+
+        .recipe:nth-child(even) {
+            background: #fdf6e3;
+        }
+
+        .recipe img {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .recipe h2 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #b58900;
+        }
+
+        .recipe p {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .recipe ul {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .recipe ul li {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .macros {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .recipe a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: #268bd2;
+        }
+
+        @media (max-width: 768px) {
+            .recipe img {
+                max-width: 100%;
+            }
+
+            .recipe {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="recipe-list">
+            <h1>Dinner Options</h1>
+            <ul>
+                <li><a href="#baked-salmon">Baked Salmon with Potatoes</a></li>
+                <li><a href="#turkey-burger-bowl">Turkey Burger Bowl</a></li>
+                <li><a href="#chickpea-curry">Vegetarian Chickpea Curry</a></li>
+                <li><a href="#grilled-chicken-veggies">Grilled Chicken with Veggies</a></li>
+                <li><a href="#beef-stir-fry">Beef Stir-Fry</a></li>
+            </ul>
+        </div>
+
+        <!-- Insert recipe sections here -->
+        <div id="chicken-caesar-salad" class="recipe">
+            <img src="images/111.jpg" alt="Chicken Caesar Salad">
+            <h2>Chicken Caesar Salad</h2>
+            <p>A classic Caesar salad topped with grilled chicken.</p>
+            <ul>
+                <li>100g grilled chicken breast</li>
+                <li>2 cups romaine lettuce (80g), chopped</li>
+                <li>¼ cup croutons (15g)</li>
+                <li>2 tablespoons dairy-free Caesar dressing (30g)</li>
+                <li>Optional: 1 tablespoon grated dairy-free cheese (10g)</li>
+            </ul>
+            <div class="macros">
+                <p><strong>Macros:</strong></p>
+                <p>Protein: 35g, Carbs: 20g, Fat: 8g</p>
+            </div>
+            <p><strong>Steps:</strong></p>
+            <p>Slice grilled chicken breast into strips. In a bowl, combine romaine lettuce, croutons, and optional cheese. Top with chicken strips, drizzle with Caesar dressing, and toss gently. Serve immediately.</p>
+        </div>
+        <div id="turkey-beef-wrap" class="recipe">
+            <img src="images/222.jpg" alt="Turkey or Beef Wrap">
+            <h2>Turkey or Beef Wrap</h2>
+            <p>A protein-packed wrap filled with vegetables and creamy dressing.</p>
+            <ul>
+                <li>100g ground turkey or beef, cooked</li>
+                <li>1 large tortilla wrap (50g)</li>
+                <li>1 cup mixed vegetables (lettuce, tomato, cucumber, 80g)</li>
+                <li>1 tablespoon hummus or dairy-free mayo (15g)</li>
+            </ul>
+            <div class="macros">
+                <p><strong>Macros:</strong></p>
+                <p>Protein: 25g, Carbs: 40g, Fat: 10g</p>
+            </div>
+            <p><strong>Steps:</strong></p>
+            <p>Cook ground turkey or beef until browned. Spread hummus or mayo on the tortilla. Add cooked protein and vegetables. Fold sides of the tortilla and roll tightly. Slice in half and serve.</p>
+        </div>
+        <div id="lentil-rice-bowl" class="recipe">
+            <img src="images/333.jpg" alt="Lentil & Rice Bowl">
+            <h2>Lentil & Rice Bowl</h2>
+            <p>A hearty bowl of lentils and rice garnished with sautéed spinach.</p>
+            <ul>
+                <li>1 cup cooked lentils (200g)</li>
+                <li>1 cup cooked rice (150g)</li>
+                <li>1 cup sautéed spinach (100g)</li>
+                <li>Optional: 1 tablespoon olive oil (15g)</li>
+            </ul>
+            <div class="macros">
+                <p><strong>Macros:</strong></p>
+                <p>Protein: 20g, Carbs: 70g, Fat: 10g</p>
+            </div>
+            <p><strong>Steps:</strong></p>
+            <p>Combine cooked lentils, rice, and sautéed spinach in a bowl. Drizzle with olive oil for added flavor. Mix gently and serve warm.</p>
+        </div>
+        <div id="shrimp-veggie-stir-fry" class="recipe">
+            <img src="images/444.jpg" alt="Shrimp & Veggie Stir-Fry">
+            <h2>Shrimp & Veggie Stir-Fry</h2>
+            <p>A quick stir-fry with shrimp and colorful vegetables served over rice.</p>
+            <ul>
+                <li>150g shrimp</li>
+                <li>1 cup cooked rice (150g)</li>
+                <li>1 cup mixed vegetables (100g)</li>
+                <li>1 tablespoon olive oil (15g)</li>
+            </ul>
+            <div class="macros">
+                <p><strong>Macros:</strong></p>
+                <p>Protein: 30g, Carbs: 50g, Fat: 12g</p>
+            </div>
+            <p><strong>Steps:</strong></p>
+            <p>Stir-fry shrimp in olive oil until pink. Add vegetables and stir-fry until tender-crisp. Serve over cooked rice.</p>
+        </div>
+        <div id="chicken-pasta-salad" class="recipe">
+            <img src="images/555.jpg" alt="Chicken & Pasta Salad">
+            <h2>Chicken & Pasta Salad</h2>
+            <p>A refreshing pasta salad combined with grilled chicken and veggies.</p>
+            <ul>
+                <li>100g grilled chicken breast</li>
+                <li>1 cup cooked pasta (150g)</li>
+                <li>1 cup chopped vegetables (100g)</li>
+                <li>1 tablespoon olive oil dressing (15g)</li>
+            </ul>
+            <div class="macros">
+                <p><strong>Macros:</strong></p>
+                <p>Protein: 35g, Carbs: 55g, Fat: 10g</p>
+            </div>
+            <p><strong>Steps:</strong></p>
+            <p>Combine cooked pasta, grilled chicken, and chopped vegetables in a bowl. Drizzle with olive oil dressing and toss well. Serve chilled or at room temperature.</p>
+        </div>
+        
+        
+        
+        
+        
+
+    </div>
+</body>
+</html>

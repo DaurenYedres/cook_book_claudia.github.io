@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakfast Options</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .recipe-list {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .recipe-list h1 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 2.5rem;
+            color: #b58900;
+            margin-bottom: 20px;
+        }
+
+        .recipe-list ul {
+            list-style: none;
+        }
+
+        .recipe-list ul li {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .recipe-list ul li a {
+            text-decoration: none;
+            color: #268bd2;
+            transition: color 0.3s;
+        }
+
+        .recipe-list ul li a:hover {
+            color: #2aa198;
+        }
+
+        .recipe {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .recipe:nth-child(odd) {
+            background: #fff4e6;
+        }
+
+        .recipe:nth-child(even) {
+            background: #fdf6e3;
+        }
+
+        .recipe img {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .recipe h2 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #b58900;
+        }
+
+        .recipe p {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .recipe ul {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .recipe ul li {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .macros {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .recipe a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: #268bd2;
+        }
+
+        @media (max-width: 768px) {
+            .recipe img {
+                max-width: 100%;
+            }
+
+            .recipe {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="recipe-list">
+            <h1>Breakfast Options</h1>
+            <ul>
+                <li><a href="#avocado-toast">Avocado Toast with Eggs</a></li>
+                <li><a href="#smoothie-bowl">Smoothie Bowl</a></li>
+                <li><a href="#dairy-free-yogurt">Dairy-Free Yogurt with Toppings</a></li>
+                <li><a href="#peanut-butter-toast">Peanut Butter & Banana Toast</a></li>
+                <li><a href="#oatmeal">Oatmeal with Almond Milk & Berries</a></li>
+            </ul>
+        </div>
+
+        <div id="avocado-toast" class="recipe">
+            <img src="images/Avocado-Toast-with-Egg.jpg" alt="Avocado Toast">
+            <h2>Avocado Toast with Eggs</h2>
+            <p>A hearty toast topped with creamy avocado and protein-rich eggs.</p>
+            <ul>
+                <li>1 slice whole-grain bread (70g)</li>
+                <li>½ ripe avocado (50g)</li>
+                <li>2 large eggs (100g)</li>
+                <li>Salt and pepper to taste</li>
+                <li>Optional: red pepper flakes, chopped herbs for garnish</li>
+            </ul>
+            <div class="macros">
+                <p><strong>Macros:</strong></p>
+                <p>Protein: 16g, Carbs: 22g, Fat: 21g</p>
+            </div>
+            <p><strong>Steps:</strong></p>
+            <p>Toast the slice of bread until golden brown. Mash the avocado with salt and pepper. Spread avocado on toast. Add cooked eggs and garnish. Serve immediately.</p>
+        </div>
+
+        <div id="smoothie-bowl" class="recipe">
+            <img src="images/smoothie-bowl.jpg" alt="Smoothie Bowl">
+            <h2>Smoothie Bowl</h2>
+            <p>A vibrant and refreshing bowl packed with fruits and nutrients.</p>
+            <ul>
+                <li>1 banana (120g)</li>
+                <li>½ cup mixed berries (75g)</li>
+                <li>½ cup almond milk (120ml)</li>
+                <li>1 tablespoon chia seeds (15g)</li>
+                <li>Optional: granola, sliced fruits, nuts</li>
+            </ul>
+            <div class="macros">
+                <p><strong>Macros:</strong></p>
+                <p>Protein: 6g, Carbs: 42g, Fat: 9g</p>
+            </div>
+            <p><strong>Steps:</strong></p>
+            <p>Blend banana, berries, almond milk, and chia seeds until smooth. Pour into a bowl and add toppings. Serve immediately.</p>
+        </div>
+
+        <div id="dairy-free-yogurt" class="recipe">
+            <img src="images/healthy-yogurt-toppings-combinations-vegan-2.jpg" alt="Dairy-Free Yogurt with Toppings">
+            <h2>Dairy-Free Yogurt with Toppings</h2>
+            <p>A creamy dairy-free yogurt parfait layered with fresh fruits and granola.</p>
+            <ul>
+                <li>1 cup dairy-free yogurt (150g)</li>
+                <li>½ cup granola (50g)</li>
+                <li>½ cup fresh mixed berries (75g)</li>
+                <li>1 teaspoon honey (optional, 5g)</li>
+            </ul>
+            <div class="macros">
+                <p><strong>Macros:</strong></p>
+                <p>Protein: 8g, Carbs: 50g, Fat: 10g</p>
+            </div>
+            <p><strong>Steps:</strong></p>
+            <p>Spoon yogurt into a serving bowl. Top with granola and fresh berries. Drizzle with honey, if desired. Serve immediately.</p>
+        </div>
+
+        <div id="peanut-butter-toast" class="recipe">
+            <img src="images/peanut-butter-banana-cinnamon-toast.jpg" alt="Peanut Butter & Banana Toast">
+            <h2>Peanut Butter & Banana Toast</h2>
+            <p>A classic combination of creamy peanut butter and sweet banana on toast.</p>
+            <ul>
+                <li>1 slice whole-grain bread (70g)</li>
+                <li>1 tablespoon peanut butter (16g)</li>
+                <li>1 small banana (100g), sliced</li>
+                <li>Optional: honey drizzle, cinnamon sprinkle</li>
+            </ul>
+            <div class="macros">
+                <p><strong>Macros:</strong></p>
+                <p>Protein: 10g, Carbs: 39g, Fat: 11g</p>
+            </div>
+            <p><strong>Steps:</strong></p>
+            <p>Toast the slice of bread to your liking. Spread peanut butter evenly on the toast. Arrange banana slices on top. Optionally, drizzle with honey and sprinkle with cinnamon. Serve immediately.</p>
+        </div>
+
+        <div id="oatmeal" class="recipe">
+            <img src="images/Overnight-Steel-Cut-Oats.jpg" alt="Oatmeal with Almond Milk & Berries">
+            <h2>Oatmeal with Almond Milk & Berries</h2>
+            <p>A warm bowl of oatmeal cooked in almond milk, topped with fresh berries.</p>
+            <ul>
+                <li>½ cup rolled oats (40g)</li>
+                <li>1 cup almond milk (240ml)</li>
+                <li>½ cup fresh berries (75g)</li>
+                <li>1 tablespoon chia seeds (15g)</li>
+                <li>Optional: sweetener of choice</li>
+            </ul>
+            <div class="macros">
+                <p><strong>Macros:</strong></p>
+                <p>Protein: 9g, Carbs: 49g, Fat: 15g</p>
+            </div>
+            <p><strong>Steps:</strong></p>
+            <p>In a saucepan, combine rolled oats and almond milk. Bring to a boil, then reduce heat and simmer until oats are tender and the mixture thickens. Pour the cooked oatmeal into a bowl. Top with fresh berries and chia seeds. Add sweetener if desired. Serve warm.</p>
+        </div>
+        
+        
+    </div>
+</body>
+</html>

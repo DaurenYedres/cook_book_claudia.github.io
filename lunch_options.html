@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunch Options</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .recipe-list {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .recipe-list h1 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 2.5rem;
+            color: #b58900;
+            margin-bottom: 20px;
+        }
+
+        .recipe-list ul {
+            list-style: none;
+        }
+
+        .recipe-list ul li {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .recipe-list ul li a {
+            text-decoration: none;
+            color: #268bd2;
+            transition: color 0.3s;
+        }
+
+        .recipe-list ul li a:hover {
+            color: #2aa198;
+        }
+
+        .recipe {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .recipe:nth-child(odd) {
+            background: #fff4e6;
+        }
+
+        .recipe:nth-child(even) {
+            background: #fdf6e3;
+        }
+
+        .recipe img {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .recipe h2 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #b58900;
+        }
+
+        .recipe p {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .recipe ul {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .recipe ul li {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .macros {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .recipe a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: #268bd2;
+        }
+
+        @media (max-width: 768px) {
+            .recipe img {
+                max-width: 100%;
+            }
+
+            .recipe {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="recipe-list">
+            <h1>Lunch Options</h1>
+            <ul>
+                <li><a href="#chicken-caesar">Chicken Caesar Salad</a></li>
+                <li><a href="#turkey-wrap">Turkey or Beef Wrap</a></li>
+                <li><a href="#lentil-bowl">Lentil & Rice Bowl</a></li>
+                <li><a href="#shrimp-stirfry">Shrimp & Veggie Stir-Fry</a></li>
+                <li><a href="#chicken-pasta">Chicken & Pasta Salad</a></li>
+            </ul>
+        </div>
+
+        <div id="chicken-caesar" class="recipe">
+            <img src="images/Caesar-Pasta-Salad-Recipe-9.jpg" alt="Chicken Caesar Salad">
+            <h2>Chicken Caesar Salad</h2>
+            <p>A classic Caesar salad topped with grilled chicken, crunchy croutons, and creamy dressing.</p>
+            <ul>
+                <li>100g grilled chicken breast</li>
+                <li>2 cups romaine lettuce (80g), chopped</li>
+                <li>¼ cup croutons (15g)</li>
+                <li>2 tablespoons dairy-free Caesar dressing (30g)</li>
+                <li>Optional: 1 tablespoon grated dairy-free cheese (10g)</li>
+            </ul>
+            <div class="macros">
+                <p><strong>Macros:</strong></p>
+                <p>Protein: 35g, Carbs: 20g, Fat: 8g</p>
+            </div>
+            <p><strong>Steps:</strong></p>
+            <p>Slice grilled chicken. Toss lettuce, croutons, and dressing in a bowl. Top with chicken and serve immediately.</p>
+        </div>
+
+        <div id="turkey-wrap" class="recipe">
+            <img src="images/Tantuni-Wraps-8.jpg" alt="Turkey or Beef Wrap">
+            <h2>Turkey or Beef Wrap</h2>
+            <p>A hearty wrap filled with your choice of turkey or beef, fresh veggies, and a creamy spread.</p>
+            <ul>
+                <li>100g ground turkey or beef, cooked</li>
+                <li>1 large tortilla wrap (50g)</li>
+                <li>1 cup mixed vegetables (lettuce, tomato, cucumber, 80g)</li>
+                <li>1 tablespoon hummus or dairy-free mayo (15g)</li>
+            </ul>
+            <div class="macros">
+                <p><strong>Macros:</strong></p>
+                <p>Protein: 25g, Carbs: 40g, Fat: 10g</p>
+            </div>
+            <p><strong>Steps:</strong></p>
+            <p>Cook turkey or beef. Spread hummus on the wrap, layer with protein and veggies, fold, and serve.</p>
+        </div>
+
+        <div id="lentil-bowl" class="recipe">
+            <img src="images/rice-and-French-lentils-in-bowl-with-parsley.jpg" alt="Lentil & Rice Bowl">
+            <h2>Lentil & Rice Bowl</h2>
+            <p>A nutritious bowl combining protein-packed lentils, rice, and sautéed spinach.</p>
+            <ul>
+                <li>1 cup cooked lentils (200g)</li>
+                <li>1 cup cooked rice (150g)</li>
+                <li>1 cup sautéed spinach (100g)</li>
+                <li>Optional: 1 tablespoon olive oil (15g)</li>
+            </ul>
+            <div class="macros">
+                <p><strong>Macros:</strong></p>
+                <p>Protein: 20g, Carbs: 70g, Fat: 10g</p>
+            </div>
+            <p><strong>Steps:</strong></p>
+            <p>Combine lentils, rice, and spinach in a bowl. Drizzle with olive oil if desired. Mix and serve warm.</p>
+        </div>
+
+        <div id="shrimp-stirfry" class="recipe">
+            <img src="images/shrimp.jpg" alt="Shrimp & Veggie Stir-Fry">
+            <h2>Shrimp & Veggie Stir-Fry</h2>
+            <p>A quick and delicious stir-fry with tender shrimp and colorful vegetables.</p>
+            <ul>
+                <li>150g shrimp, peeled and deveined</li>
+                <li>1 cup cooked rice (150g)</li>
+                <li>1 cup stir-fried vegetables (100g)</li>
+                <li>1 tablespoon soy sauce (15ml)</li>
+            </ul>
+            <div class="macros">
+                <p><strong>Macros:</strong></p>
+                <p>Protein: 30g, Carbs: 50g, Fat: 12g</p>
+            </div>
+            <p><strong>Steps:</strong></p>
+            <p>Cook shrimp in a hot skillet. Add vegetables and soy sauce. Serve over cooked rice.</p>
+        </div>
+
+        <div id="chicken-pasta" class="recipe">
+            <img src="images/chicken-pasta-salad-5.jpg" alt="Chicken & Pasta Salad">
+            <h2>Chicken & Pasta Salad</h2>
+            <p>A refreshing salad combining grilled chicken, pasta, and a medley of vegetables.</p>
+            <ul>
+                <li>100g grilled chicken breast</li>
+                <li>1 cup cooked pasta (150g)</li>
+                <li>1 cup chopped vegetables (100g)</li>
+                <li>1 tablespoon olive oil dressing (15g)</li>
+            </ul>
+            <div class="macros">
+                <p><strong>Macros:</strong></p>
+                <p>Protein: 35g, Carbs: 55g, Fat: 10g</p>
+            </div>
+            <p><strong>Steps:</strong></p>
+            <p>Toss cooked pasta, veggies, and dressing in a bowl. Top with grilled chicken and serve.</p>
+        </div>
+    </div>
+</body>
+</html>
