@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food List with Macros</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #fdf6e3;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Roboto Slab', serif;
+            margin-bottom: 20px;
+            color: #b58900;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #268bd2;
+            font-weight: bold;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        nav a:hover {
+            color: #2aa198;
+        }
+
+        .category {
+            margin-bottom: 40px;
+        }
+
+        .category h2 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 2rem;
+            color: #b58900;
+            margin-bottom: 15px;
+        }
+
+        .food-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .food-list li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background: #f7f2e7;
+            border: 1px solid #e0d7c5;
+            border-radius: 5px;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Food List with Macros</h1>
+        <nav>
+            <a href="#fruits">Fruits</a>
+            <a href="#vegetables">Vegetables</a>
+            <a href="#meats">Meats</a>
+            <a href="#seafood">Seafood</a>
+            <a href="#dairy">Dairy</a>
+            <a href="#grains">Grains</a>
+            <a href="#nuts-seeds">Nuts & Seeds</a>
+        </nav>
+
+        <div id="fruits" class="category">
+            <h2 style="text-align: center;">Fruits</h2>
+            <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: 'Roboto Condensed', sans-serif; text-align: center;">
+                <thead>
+                    <tr style="background-color: #fde8cd; color: #b58900;">
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Fruit</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Per Unit (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Protein (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Carbs (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Fat (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Per 100g</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Protein (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Carbs (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Fat (g)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Green Apple</td>
+                        <td>200</td>
+                        <td>0.5</td>
+                        <td>25</td>
+                        <td>0.2</td>
+                        <td>100</td>
+                        <td>0.3</td>
+                        <td>12.5</td>
+                        <td>0.1</td>
+                    </tr>
+                    <tr>
+                        <td>Banana</td>
+                        <td>120</td>
+                        <td>1.3</td>
+                        <td>27</td>
+                        <td>0.3</td>
+                        <td>100</td>
+                        <td>1.1</td>
+                        <td>22.5</td>
+                        <td>0.2</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Orange</td>
+                        <td>130</td>
+                        <td>1.2</td>
+                        <td>15.4</td>
+                        <td>0.2</td>
+                        <td>100</td>
+                        <td>0.9</td>
+                        <td>12</td>
+                        <td>0.1</td>
+                    </tr>
+                    <tr>
+                        <td>Strawberries</td>
+                        <td>150</td>
+                        <td>1.2</td>
+                        <td>11.7</td>
+                        <td>0.3</td>
+                        <td>100</td>
+                        <td>0.8</td>
+                        <td>7.8</td>
+                        <td>0.2</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Blueberries</td>
+                        <td>148</td>
+                        <td>1.0</td>
+                        <td>21</td>
+                        <td>0.5</td>
+                        <td>100</td>
+                        <td>0.7</td>
+                        <td>14.2</td>
+                        <td>0.3</td>
+                    </tr>
+                    <tr>
+                        <td>Mango</td>
+                        <td>200</td>
+                        <td>1.8</td>
+                        <td>50</td>
+                        <td>0.6</td>
+                        <td>100</td>
+                        <td>0.9</td>
+                        <td>25</td>
+                        <td>0.3</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Pineapple</td>
+                        <td>165</td>
+                        <td>0.9</td>
+                        <td>21.6</td>
+                        <td>0.2</td>
+                        <td>100</td>
+                        <td>0.5</td>
+                        <td>13.1</td>
+                        <td>0.1</td>
+                    </tr>
+                    <tr>
+                        <td>Watermelon</td>
+                        <td>280</td>
+                        <td>2.1</td>
+                        <td>22.6</td>
+                        <td>0.3</td>
+                        <td>100</td>
+                        <td>0.8</td>
+                        <td>8.1</td>
+                        <td>0.1</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Pomegranate</td>
+                        <td>280</td>
+                        <td>5</td>
+                        <td>52</td>
+                        <td>2</td>
+                        <td>100</td>
+                        <td>1.8</td>
+                        <td>18.6</td>
+                        <td>0.7</td>
+                    </tr>
+                    <tr>
+                        <td>Grapes</td>
+                        <td>151</td>
+                        <td>0.8</td>
+                        <td>27.3</td>
+                        <td>0.2</td>
+                        <td>100</td>
+                        <td>0.5</td>
+                        <td>18.1</td>
+                        <td>0.1</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Cherries</td>
+                        <td>140</td>
+                        <td>1.4</td>
+                        <td>22</td>
+                        <td>0.3</td>
+                        <td>100</td>
+                        <td>1</td>
+                        <td>16</td>
+                        <td>0.2</td>
+                    </tr>
+                    <tr>
+                        <td>Kiwi</td>
+                        <td>75</td>
+                        <td>1.2</td>
+                        <td>11</td>
+                        <td>0.5</td>
+                        <td>100</td>
+                        <td>1.6</td>
+                        <td>14.7</td>
+                        <td>0.7</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Pear</td>
+                        <td>178</td>
+                        <td>0.7</td>
+                        <td>27.4</td>
+                        <td>0.3</td>
+                        <td>100</td>
+                        <td>0.4</td>
+                        <td>15.4</td>
+                        <td>0.2</td>
+                    </tr>
+                    <tr>
+                        <td>Raspberries</td>
+                        <td>123</td>
+                        <td>1.5</td>
+                        <td>14.7</td>
+                        <td>0.8</td>
+                        <td>100</td>
+                        <td>1.2</td>
+                        <td>12</td>
+                        <td>0.6</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Blackberries</td>
+                        <td>144</td>
+                        <td>2</td>
+                        <td>13.8</td>
+                        <td>1</td>
+                        <td>100</td>
+                        <td>1.4</td>
+                        <td>9.6</td>
+                        <td>0.7</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        
+
+        <div id="vegetables" class="category">
+            <h2 style="text-align: center;">Vegetables</h2>
+            <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: 'Roboto Condensed', sans-serif; text-align: center;">
+                <thead>
+                    <tr style="background-color: #fde8cd; color: #b58900;">
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Vegetable</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Per Unit (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Protein (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Carbs (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Fat (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Per 100g</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Protein (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Carbs (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Fat (g)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Carrot</td>
+                        <td>61</td>
+                        <td>0.5</td>
+                        <td>6.9</td>
+                        <td>0.1</td>
+                        <td>100</td>
+                        <td>0.9</td>
+                        <td>11.3</td>
+                        <td>0.2</td>
+                    </tr>
+                    <tr>
+                        <td>Broccoli</td>
+                        <td>91</td>
+                        <td>2.6</td>
+                        <td>6.0</td>
+                        <td>0.3</td>
+                        <td>100</td>
+                        <td>2.9</td>
+                        <td>6.6</td>
+                        <td>0.4</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Spinach</td>
+                        <td>30</td>
+                        <td>0.9</td>
+                        <td>1.1</td>
+                        <td>0.1</td>
+                        <td>100</td>
+                        <td>2.9</td>
+                        <td>3.6</td>
+                        <td>0.3</td>
+                    </tr>
+                    <tr>
+                        <td>Cauliflower</td>
+                        <td>100</td>
+                        <td>2.0</td>
+                        <td>5.0</td>
+                        <td>0.3</td>
+                        <td>100</td>
+                        <td>2.0</td>
+                        <td>5.0</td>
+                        <td>0.3</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Tomato</td>
+                        <td>123</td>
+                        <td>1.1</td>
+                        <td>4.8</td>
+                        <td>0.2</td>
+                        <td>100</td>
+                        <td>0.9</td>
+                        <td>3.9</td>
+                        <td>0.1</td>
+                    </tr>
+                    <tr>
+                        <td>Cucumber</td>
+                        <td>300</td>
+                        <td>1.4</td>
+                        <td>11.4</td>
+                        <td>0.1</td>
+                        <td>100</td>
+                        <td>0.5</td>
+                        <td>3.8</td>
+                        <td>0.0</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Bell Pepper</td>
+                        <td>120</td>
+                        <td>1.0</td>
+                        <td>6.0</td>
+                        <td>0.1</td>
+                        <td>100</td>
+                        <td>0.8</td>
+                        <td>5.0</td>
+                        <td>0.1</td>
+                    </tr>
+                    <tr>
+                        <td>Eggplant</td>
+                        <td>100</td>
+                        <td>1.0</td>
+                        <td>6.0</td>
+                        <td>0.2</td>
+                        <td>100</td>
+                        <td>1.0</td>
+                        <td>6.0</td>
+                        <td>0.2</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Zucchini</td>
+                        <td>200</td>
+                        <td>1.4</td>
+                        <td>7.0</td>
+                        <td>0.2</td>
+                        <td>100</td>
+                        <td>0.7</td>
+                        <td>3.5</td>
+                        <td>0.1</td>
+                    </tr>
+                    <tr>
+                        <td>Sweet Potato</td>
+                        <td>130</td>
+                        <td>2.0</td>
+                        <td>27.0</td>
+                        <td>0.1</td>
+                        <td>100</td>
+                        <td>1.5</td>
+                        <td>20.8</td>
+                        <td>0.1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+
+        <div id="meats" class="category">
+            <h2 style="text-align: center;">Meats</h2>
+            <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: 'Roboto Condensed', sans-serif; text-align: center;">
+                <thead>
+                    <tr style="background-color: #fde8cd; color: #b58900;">
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Meat</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Per Unit (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Protein (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Carbs (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Fat (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Per 100g</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Protein (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Carbs (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Fat (g)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Chicken Breast</td>
+                        <td>120</td>
+                        <td>26</td>
+                        <td>0</td>
+                        <td>1.5</td>
+                        <td>100</td>
+                        <td>22</td>
+                        <td>0</td>
+                        <td>1.2</td>
+                    </tr>
+                    <tr>
+                        <td>Ground Beef (85% lean)</td>
+                        <td>120</td>
+                        <td>21</td>
+                        <td>0</td>
+                        <td>15</td>
+                        <td>100</td>
+                        <td>17.5</td>
+                        <td>0</td>
+                        <td>12.5</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Turkey Breast</td>
+                        <td>100</td>
+                        <td>29</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>100</td>
+                        <td>29</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Pork Loin</td>
+                        <td>100</td>
+                        <td>26</td>
+                        <td>0</td>
+                        <td>5</td>
+                        <td>100</td>
+                        <td>26</td>
+                        <td>0</td>
+                        <td>5</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Lamb Chop</td>
+                        <td>100</td>
+                        <td>25</td>
+                        <td>0</td>
+                        <td>15</td>
+                        <td>100</td>
+                        <td>25</td>
+                        <td>0</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Duck Breast</td>
+                        <td>85</td>
+                        <td>19</td>
+                        <td>0</td>
+                        <td>6</td>
+                        <td>100</td>
+                        <td>22.5</td>
+                        <td>0</td>
+                        <td>7.1</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Venison</td>
+                        <td>100</td>
+                        <td>26</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>100</td>
+                        <td>26</td>
+                        <td>0</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Buffalo Meat</td>
+                        <td>100</td>
+                        <td>28</td>
+                        <td>0</td>
+                        <td>2.4</td>
+                        <td>100</td>
+                        <td>28</td>
+                        <td>0</td>
+                        <td>2.4</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Goat Meat</td>
+                        <td>100</td>
+                        <td>27</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>100</td>
+                        <td>27</td>
+                        <td>0</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Ham (Lean)</td>
+                        <td>100</td>
+                        <td>20</td>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>100</td>
+                        <td>20</td>
+                        <td>1</td>
+                        <td>4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div id="seafood" class="category">
+            <h2 style="text-align: center;">Seafood</h2>
+            <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: 'Roboto Condensed', sans-serif; text-align: center;">
+                <thead>
+                    <tr style="background-color: #fde8cd; color: #b58900;">
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Seafood</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Per Unit (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Protein (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Carbs (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Fat (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Per 100g</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Protein (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Carbs (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Fat (g)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Salmon (Cooked)</td>
+                        <td>100</td>
+                        <td>25</td>
+                        <td>0</td>
+                        <td>13</td>
+                        <td>100</td>
+                        <td>25</td>
+                        <td>0</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>Tuna (Cooked)</td>
+                        <td>100</td>
+                        <td>32</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>100</td>
+                        <td>32</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Shrimp (Cooked)</td>
+                        <td>100</td>
+                        <td>24</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>100</td>
+                        <td>24</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Cod (Cooked)</td>
+                        <td>100</td>
+                        <td>20</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>100</td>
+                        <td>20</td>
+                        <td>0</td>
+                        <td>1</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Crab (Cooked)</td>
+                        <td>100</td>
+                        <td>19</td>
+                        <td>0</td>
+                        <td>1.5</td>
+                        <td>100</td>
+                        <td>19</td>
+                        <td>0</td>
+                        <td>1.5</td>
+                    </tr>
+                    <tr>
+                        <td>Lobster (Cooked)</td>
+                        <td>100</td>
+                        <td>19</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>100</td>
+                        <td>19</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Tilapia (Cooked)</td>
+                        <td>100</td>
+                        <td>26</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>100</td>
+                        <td>26</td>
+                        <td>0</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Mussels (Cooked)</td>
+                        <td>100</td>
+                        <td>24</td>
+                        <td>3.7</td>
+                        <td>1.5</td>
+                        <td>100</td>
+                        <td>24</td>
+                        <td>3.7</td>
+                        <td>1.5</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Oysters (Cooked)</td>
+                        <td>100</td>
+                        <td>9</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>100</td>
+                        <td>9</td>
+                        <td>4</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Scallops (Cooked)</td>
+                        <td>100</td>
+                        <td>24</td>
+                        <td>2</td>
+                        <td>0.5</td>
+                        <td>100</td>
+                        <td>24</td>
+                        <td>2</td>
+                        <td>0.5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+
+        <div id="dairy" class="category">
+            <h2 style="text-align: center;">Dairy Products</h2>
+            <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: 'Roboto Condensed', sans-serif; text-align: center;">
+                <thead>
+                    <tr style="background-color: #fde8cd; color: #b58900;">
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Dairy Product</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Per Unit (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Protein (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Carbs (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Fat (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Per 100g</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Protein (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Carbs (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Fat (g)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Milk (Whole)</td>
+                        <td>244</td>
+                        <td>8</td>
+                        <td>12</td>
+                        <td>8</td>
+                        <td>100</td>
+                        <td>3.3</td>
+                        <td>4.9</td>
+                        <td>3.3</td>
+                    </tr>
+                    <tr>
+                        <td>Milk (Skim)</td>
+                        <td>244</td>
+                        <td>8</td>
+                        <td>12</td>
+                        <td>0.4</td>
+                        <td>100</td>
+                        <td>3.3</td>
+                        <td>4.9</td>
+                        <td>0.2</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Cheddar Cheese</td>
+                        <td>28</td>
+                        <td>7</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>100</td>
+                        <td>25</td>
+                        <td>3.6</td>
+                        <td>33.1</td>
+                    </tr>
+                    <tr>
+                        <td>Greek Yogurt (Plain)</td>
+                        <td>150</td>
+                        <td>15</td>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>100</td>
+                        <td>10</td>
+                        <td>4</td>
+                        <td>2.6</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Butter</td>
+                        <td>14</td>
+                        <td>0.1</td>
+                        <td>0</td>
+                        <td>11.5</td>
+                        <td>100</td>
+                        <td>0.7</td>
+                        <td>0.1</td>
+                        <td>81.1</td>
+                    </tr>
+                    <tr>
+                        <td>Cottage Cheese</td>
+                        <td>113</td>
+                        <td>14</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>100</td>
+                        <td>12.4</td>
+                        <td>2.7</td>
+                        <td>3.5</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Parmesan Cheese</td>
+                        <td>28</td>
+                        <td>10</td>
+                        <td>1</td>
+                        <td>7</td>
+                        <td>100</td>
+                        <td>35.7</td>
+                        <td>3.6</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Ricotta Cheese</td>
+                        <td>124</td>
+                        <td>7</td>
+                        <td>6</td>
+                        <td>10</td>
+                        <td>100</td>
+                        <td>5.6</td>
+                        <td>4.8</td>
+                        <td>8</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Heavy Cream</td>
+                        <td>15</td>
+                        <td>0.3</td>
+                        <td>0.3</td>
+                        <td>5</td>
+                        <td>100</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>33</td>
+                    </tr>
+                    <tr>
+                        <td>Feta Cheese</td>
+                        <td>28</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>6</td>
+                        <td>100</td>
+                        <td>14.3</td>
+                        <td>3.6</td>
+                        <td>21.4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+
+        <div id="grains" class="category">
+            <h2 style="text-align: center;">Grains</h2>
+            <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: 'Roboto Condensed', sans-serif; text-align: center;">
+                <thead>
+                    <tr style="background-color: #fde8cd; color: #b58900;">
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Grain</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Per Unit (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Protein (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Carbs (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Fat (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Per 100g</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Protein (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Carbs (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Fat (g)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>White Rice (Cooked)</td>
+                        <td>100</td>
+                        <td>2.7</td>
+                        <td>28</td>
+                        <td>0.3</td>
+                        <td>100</td>
+                        <td>2.7</td>
+                        <td>28</td>
+                        <td>0.3</td>
+                    </tr>
+                    <tr>
+                        <td>Brown Rice (Cooked)</td>
+                        <td>100</td>
+                        <td>2.6</td>
+                        <td>23</td>
+                        <td>0.9</td>
+                        <td>100</td>
+                        <td>2.6</td>
+                        <td>23</td>
+                        <td>0.9</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Quinoa (Cooked)</td>
+                        <td>100</td>
+                        <td>4.1</td>
+                        <td>21.3</td>
+                        <td>1.9</td>
+                        <td>100</td>
+                        <td>4.1</td>
+                        <td>21.3</td>
+                        <td>1.9</td>
+                    </tr>
+                    <tr>
+                        <td>Oatmeal (Cooked)</td>
+                        <td>100</td>
+                        <td>2.4</td>
+                        <td>12</td>
+                        <td>1.4</td>
+                        <td>100</td>
+                        <td>2.4</td>
+                        <td>12</td>
+                        <td>1.4</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Bulgur (Cooked)</td>
+                        <td>100</td>
+                        <td>3.1</td>
+                        <td>18.6</td>
+                        <td>0.2</td>
+                        <td>100</td>
+                        <td>3.1</td>
+                        <td>18.6</td>
+                        <td>0.2</td>
+                    </tr>
+                    <tr>
+                        <td>Couscous (Cooked)</td>
+                        <td>100</td>
+                        <td>3.8</td>
+                        <td>22.5</td>
+                        <td>0.2</td>
+                        <td>100</td>
+                        <td>3.8</td>
+                        <td>22.5</td>
+                        <td>0.2</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Barley (Cooked)</td>
+                        <td>100</td>
+                        <td>2.3</td>
+                        <td>28.2</td>
+                        <td>0.4</td>
+                        <td>100</td>
+                        <td>2.3</td>
+                        <td>28.2</td>
+                        <td>0.4</td>
+                    </tr>
+                    <tr>
+                        <td>Millet (Cooked)</td>
+                        <td>100</td>
+                        <td>3.5</td>
+                        <td>23.7</td>
+                        <td>0.7</td>
+                        <td>100</td>
+                        <td>3.5</td>
+                        <td>23.7</td>
+                        <td>0.7</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Farro (Cooked)</td>
+                        <td>100</td>
+                        <td>3.5</td>
+                        <td>22</td>
+                        <td>0.5</td>
+                        <td>100</td>
+                        <td>3.5</td>
+                        <td>22</td>
+                        <td>0.5</td>
+                    </tr>
+                    <tr>
+                        <td>Buckwheat (Cooked)</td>
+                        <td>100</td>
+                        <td>3.4</td>
+                        <td>19.9</td>
+                        <td>0.6</td>
+                        <td>100</td>
+                        <td>3.4</td>
+                        <td>19.9</td>
+                        <td>0.6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+
+        <div id="nuts-seeds" class="category">
+            <h2 style="text-align: center;">Nuts and Seeds</h2>
+            <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: 'Roboto Condensed', sans-serif; text-align: center;">
+                <thead>
+                    <tr style="background-color: #fde8cd; color: #b58900;">
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Nut/Seed</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Per Unit (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Protein (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Carbs (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Fat (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Per 100g</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Protein (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Carbs (g)</th>
+                        <th style="border: 1px solid #e0d7c5; padding: 10px;">Fat (g)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Almonds</td>
+                        <td>28</td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>14</td>
+                        <td>100</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Walnuts</td>
+                        <td>28</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>18</td>
+                        <td>100</td>
+                        <td>15</td>
+                        <td>14</td>
+                        <td>65</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Peanuts</td>
+                        <td>28</td>
+                        <td>7</td>
+                        <td>6</td>
+                        <td>14</td>
+                        <td>100</td>
+                        <td>25</td>
+                        <td>21</td>
+                        <td>49</td>
+                    </tr>
+                    <tr>
+                        <td>Cashews</td>
+                        <td>28</td>
+                        <td>5</td>
+                        <td>9</td>
+                        <td>12</td>
+                        <td>100</td>
+                        <td>18</td>
+                        <td>30</td>
+                        <td>43</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Pecans</td>
+                        <td>28</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>20</td>
+                        <td>100</td>
+                        <td>9</td>
+                        <td>14</td>
+                        <td>72</td>
+                    </tr>
+                    <tr>
+                        <td>Pumpkin Seeds</td>
+                        <td>28</td>
+                        <td>7</td>
+                        <td>5</td>
+                        <td>13</td>
+                        <td>100</td>
+                        <td>25</td>
+                        <td>18</td>
+                        <td>46</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Sunflower Seeds</td>
+                        <td>28</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>14</td>
+                        <td>100</td>
+                        <td>21</td>
+                        <td>21</td>
+                        <td>49</td>
+                    </tr>
+                    <tr>
+                        <td>Chia Seeds</td>
+                        <td>28</td>
+                        <td>5</td>
+                        <td>12</td>
+                        <td>9</td>
+                        <td>100</td>
+                        <td>17</td>
+                        <td>42</td>
+                        <td>31</td>
+                    </tr>
+                    <tr style="background-color: #f7f2e7;">
+                        <td>Flaxseeds</td>
+                        <td>28</td>
+                        <td>5</td>
+                        <td>8</td>
+                        <td>12</td>
+                        <td>100</td>
+                        <td>18</td>
+                        <td>28</td>
+                        <td>42</td>
+                    </tr>
+                    <tr>
+                        <td>Sesame Seeds</td>
+                        <td>28</td>
+                        <td>5</td>
+                        <td>7</td>
+                        <td>15</td>
+                        <td>100</td>
+                        <td>18</td>
+                        <td>25</td>
+                        <td>53</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+</body>
+</html>
