@@ -4,238 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dessert Options</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Roboto', Arial, sans-serif;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .recipe-list {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .recipe-list h1 {
-            font-family: 'Roboto Slab', serif;
-            font-size: 2.5rem;
-            color: #b58900;
-            margin-bottom: 20px;
-        }
-
-        .recipe-list ul {
-            list-style: none;
-        }
-
-        .recipe-list ul li {
-            font-size: 1.5rem;
-            margin: 10px 0;
-        }
-
-        .recipe-list ul li a {
-            text-decoration: none;
-            color: #268bd2;
-            transition: color 0.3s;
-        }
-
-        .recipe-list ul li a:hover {
-            color: #2aa198;
-        }
-
-        .recipe {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 50px;
-            text-align: center;
-        }
-
-        .recipe:nth-child(odd) {
-            background: #fff4e6;
-        }
-
-        .recipe:nth-child(even) {
-            background: #fdf6e3;
-        }
-
-        .recipe img {
-            max-width: 80%;
-            height: auto;
-            margin-bottom: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .recipe h2 {
-            font-family: 'Roboto Slab', serif;
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: #b58900;
-        }
-
-        .recipe p {
-            font-size: 1.2rem;
-            color: #555;
-            line-height: 1.8;
-            margin-bottom: 20px;
-        }
-
-        .recipe ul {
-            list-style: none;
-            margin-bottom: 20px;
-        }
-
-        .recipe ul li {
-            font-size: 1.2rem;
-            color: #333;
-        }
-
-        .macros {
-            font-size: 1.2rem;
-            color: #333;
-            margin-bottom: 20px;
-        }
-
-        @media (max-width: 768px) {
-            .recipe img {
-                max-width: 100%;
-            }
-
-            .recipe {
-                padding: 20px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="recipe-list">
-            <h1>Dessert Options</h1>
-            <ul>
-                <li><a href="#chocolate-mousse">Chocolate Avocado Mousse</a></li>
-                <li><a href="#protein-parfait">Protein Berry Parfait</a></li>
-                <li><a href="#energy-bites">Peanut Butter Energy Bites</a></li>
-                <li><a href="#chia-pudding">Coconut Chia Pudding</a></li>
-                <li><a href="#baked-apple">Baked Apple with Cinnamon</a></li>
-            </ul>
-        </div>
-
-        <!-- Placeholder for Recipes -->
-        <!-- Insert dessert recipes here -->
-        <div id="chocolate-mousse" class="recipe">
-            <img src="images/0006.jpg" alt="Chocolate Avocado Mousse">
-            <h2>Chocolate Avocado Mousse</h2>
-            <p>A creamy and rich dessert packed with protein and healthy fats.</p>
-            <ul>
-                <li>1 ripe avocado (150g)</li>
-                <li>2 tablespoons cocoa powder (20g)</li>
-                <li>1 scoop chocolate protein powder (30g)</li>
-                <li>2 tablespoons almond milk (30ml)</li>
-                <li>1 teaspoon vanilla extract</li>
-            </ul>
-            <div class="macros">
-                <p><strong>Macros:</strong></p>
-                <p>Protein: 20g, Carbs: 12g, Fat: 16g</p>
-            </div>
-            <p><strong>Steps:</strong></p>
-            <p>Blend all ingredients until smooth. Adjust sweetness with stevia or honey if desired. Chill for 30 minutes before serving.</p>
-        </div>
-
-        <div id="protein-parfait" class="recipe">
-            <img src="images/0007.jpg" alt="Protein Berry Parfait">
-            <h2>Protein Berry Parfait</h2>
-            <p>A layered parfait with berries, yogurt, and protein for a refreshing treat.</p>
-            <ul>
-                <li>1 cup low-fat Greek yogurt (200g)</li>
-                <li>½ cup mixed berries (75g)</li>
-                <li>1 scoop vanilla protein powder (30g)</li>
-                <li>2 tablespoons granola (15g)</li>
-            </ul>
-            <div class="macros">
-                <p><strong>Macros:</strong></p>
-                <p>Protein: 30g, Carbs: 18g, Fat: 4g</p>
-            </div>
-            <p><strong>Steps:</strong></p>
-            <p>Mix protein powder with yogurt. Layer yogurt, berries, and granola in a glass. Repeat layers and serve chilled.</p>
-        </div>
-
-        <div id="energy-bites" class="recipe">
-            <img src="images/0008.jpg" alt="Peanut Butter Energy Bites">
-            <h2>Peanut Butter Energy Bites</h2>
-            <p>High-protein energy bites perfect for a quick dessert or snack.</p>
-            <ul>
-                <li>1 cup oats (90g)</li>
-                <li>½ cup peanut butter (120g)</li>
-                <li>2 tablespoons honey (30g)</li>
-                <li>1 scoop vanilla protein powder (30g)</li>
-                <li>2 tablespoons chia seeds (20g)</li>
-            </ul>
-            <div class="macros">
-                <p><strong>Macros (per bite, makes 12):</strong></p>
-                <p>Protein: 4g, Carbs: 8g, Fat: 5g</p>
-            </div>
-            <p><strong>Steps:</strong></p>
-            <p>Mix all ingredients in a bowl. Roll into 12 small balls. Chill for 1 hour before serving.</p>
-        </div>
-
-        <div id="chia-pudding" class="recipe">
-            <img src="images/0009.jpg" alt="Coconut Chia Pudding">
-            <h2>Coconut Chia Pudding</h2>
-            <p>A creamy, high-protein pudding with the goodness of chia seeds.</p>
-            <ul>
-                <li>1 cup coconut milk (240ml)</li>
-                <li>3 tablespoons chia seeds (45g)</li>
-                <li>1 scoop vanilla protein powder (30g)</li>
-                <li>1 teaspoon maple syrup (optional)</li>
-            </ul>
-            <div class="macros">
-                <p><strong>Macros:</strong></p>
-                <p>Protein: 25g, Carbs: 15g, Fat: 12g</p>
-            </div>
-            <p><strong>Steps:</strong></p>
-            <p>Mix all ingredients in a jar. Stir well and refrigerate overnight. Serve topped with fruit if desired.</p>
-        </div>
-
-        <div id="baked-apple" class="recipe">
-            <img src="images/0010.jpg" alt="Baked Apple with Cinnamon">
-            <h2>Baked Apple with Cinnamon</h2>
-            <p>A warm dessert featuring spiced baked apples with added protein.</p>
-            <ul>
-                <li>1 large apple (200g), cored</li>
-                <li>1 tablespoon almond butter (16g)</li>
-                <li>1 scoop vanilla protein powder (30g)</li>
-                <li>½ teaspoon cinnamon</li>
-                <li>1 teaspoon honey (optional)</li>
-            </ul>
-            <div class="macros">
-                <p><strong>Macros:</strong></p>
-                <p>Protein: 15g, Carbs: 25g, Fat: 5g</p>
-            </div>
-            <p><strong>Steps:</strong></p>
-            <p>Core the apple and stuff with almond butter, protein powder, and honey. Sprinkle with cinnamon. Bake at 180°C (350°F) for 20 minutes. Serve warm.</p>
-        </div>
-        
-        
-        
-        
-        
-      
-
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <button class="menu-button">☰ Menu</button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="breakfast_options.html">Breakfast</a></li>
+            <li><a href="lunch_options.html">Lunch</a></li>
+            <li><a href="dinner_options.html">Dinner</a></li>
+            <li><a href="food_list.html">Macros</a></li>
+            <li><a href="weekly_grocery.html">Grocery List</a></li>
+        </ul>
     </div>
+
+    <!-- Dessert Recipes -->
+    <div class="container">
+        <!-- Chocolate Avocado Mousse -->
+        <div class="recipe">
+            <h1>Chocolate Avocado Mousse</h1>
+            <div class="recipe-content">
+                <img src="images/0006.jpg" alt="Chocolate Avocado Mousse">
+                <div class="recipe-text">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>2 ripe avocados</li>
+                        <li>¼ cup cocoa powder</li>
+                        <li>¼ cup honey or maple syrup</li>
+                        <li>½ teaspoon vanilla extract</li>
+                        <li>Pinch of salt</li>
+                    </ul>
+                    <h2>Procedure</h2>
+                    <p>Blend all ingredients until smooth. Chill for 30 minutes before serving.</p>
+                    <h2>Macros</h2>
+                    <p>Protein: 4g, Carbs: 15g, Fat: 20g</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dairy-Free Banana Ice Cream -->
+        <div class="recipe">
+            <h1>Dairy-Free Banana Ice Cream</h1>
+            <div class="recipe-content">
+                <img src="images/0007.jpg" alt="Banana Ice Cream">
+                <div class="recipe-text">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>2 frozen bananas</li>
+                        <li>1 tablespoon almond butter</li>
+                        <li>½ teaspoon vanilla extract</li>
+                        <li>Optional: dark chocolate chips</li>
+                    </ul>
+                    <h2>Procedure</h2>
+                    <p>Blend bananas, almond butter, and vanilla until creamy. Serve immediately or freeze for a firmer texture. Add chocolate chips if desired.</p>
+                    <h2>Macros</h2>
+                    <p>Protein: 3g, Carbs: 22g, Fat: 6g</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- No-Bake Energy Bites -->
+        <div class="recipe">
+            <h1>No-Bake Energy Bites</h1>
+            <div class="recipe-content">
+                <img src="images/0008.jpg" alt="No-Bake Energy Bites">
+                <div class="recipe-text">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>1 cup rolled oats</li>
+                        <li>½ cup peanut butter</li>
+                        <li>¼ cup honey</li>
+                        <li>1 teaspoon vanilla extract</li>
+                        <li>Optional: dark chocolate chips</li>
+                    </ul>
+                    <h2>Procedure</h2>
+                    <p>Mix all ingredients in a bowl. Form into small balls and refrigerate for at least 30 minutes before serving.</p>
+                    <h2>Macros</h2>
+                    <p>Protein: 6g, Carbs: 20g, Fat: 8g</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chia Seed Pudding -->
+        <div class="recipe">
+            <h1>Chia Seed Pudding</h1>
+            <div class="recipe-content">
+                <img src="images/0009.jpg" alt="Chia Seed Pudding">
+                <div class="recipe-text">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>¼ cup chia seeds</li>
+                        <li>1 cup almond milk</li>
+                        <li>1 tablespoon honey or maple syrup</li>
+                        <li>½ teaspoon vanilla extract</li>
+                        <li>Optional: fresh fruit for topping</li>
+                    </ul>
+                    <h2>Procedure</h2>
+                    <p>Mix all ingredients in a bowl. Refrigerate for at least 2 hours or overnight until thickened. Serve with fresh fruit if desired.</p>
+                    <h2>Macros</h2>
+                    <p>Protein: 5g, Carbs: 15g, Fat: 8g</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Navbar -->
+    <script>
+        const menuButton = document.querySelector('.menu-button');
+        const navLinks = document.querySelector('.navbar ul');
+
+        menuButton.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>

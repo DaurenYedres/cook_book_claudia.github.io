@@ -4,232 +4,250 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dinner Options</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Roboto', Arial, sans-serif;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .recipe-list {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .recipe-list h1 {
-            font-family: 'Roboto Slab', serif;
-            font-size: 2.5rem;
-            color: #b58900;
-            margin-bottom: 20px;
-        }
-
-        .recipe-list ul {
-            list-style: none;
-        }
-
-        .recipe-list ul li {
-            font-size: 1.5rem;
-            margin: 10px 0;
-        }
-
-        .recipe-list ul li a {
-            text-decoration: none;
-            color: #268bd2;
-            transition: color 0.3s;
-        }
-
-        .recipe-list ul li a:hover {
-            color: #2aa198;
-        }
-
-        .recipe {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 50px;
-            text-align: center;
-        }
-
-        .recipe:nth-child(odd) {
-            background: #fff4e6;
-        }
-
-        .recipe:nth-child(even) {
-            background: #fdf6e3;
-        }
-
-        .recipe img {
-            max-width: 80%;
-            height: auto;
-            margin-bottom: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .recipe h2 {
-            font-family: 'Roboto Slab', serif;
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: #b58900;
-        }
-
-        .recipe p {
-            font-size: 1.2rem;
-            color: #555;
-            line-height: 1.8;
-            margin-bottom: 20px;
-        }
-
-        .recipe ul {
-            list-style: none;
-            margin-bottom: 20px;
-        }
-
-        .recipe ul li {
-            font-size: 1.2rem;
-            color: #333;
-        }
-
-        .macros {
-            font-size: 1.2rem;
-            color: #333;
-            margin-bottom: 20px;
-        }
-
-        @media (max-width: 768px) {
-            .recipe img {
-                max-width: 100%;
-            }
-
-            .recipe {
-                padding: 20px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <button class="menu-button">☰ Menu</button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="breakfast_options.html">Breakfast</a></li>
+            <li><a href="lunch_options.html">Lunch</a></li>
+            <li><a href="dessert_options.html">Dessert</a></li>
+            <li><a href="food_list.html">Macros</a></li>
+            <li><a href="weekly_grocery.html">Grocery List</a></li>
+        </ul>
+    </div>
+
+    <!-- Dinner Recipes -->
     <div class="container">
-        <div class="recipe-list">
-            <h1>Dinner Options</h1>
-            <ul>
-                <li><a href="#baked-salmon">Baked Salmon with Potatoes</a></li>
-                <li><a href="#turkey-burger-bowl">Turkey Burger Bowl</a></li>
-                <li><a href="#chickpea-curry">Vegetarian Chickpea Curry</a></li>
-                <li><a href="#grilled-chicken-veggies">Grilled Chicken with Veggies</a></li>
-                <li><a href="#beef-stir-fry">Beef Stir-Fry</a></li>
-            </ul>
+        <!-- Grilled Chicken with Quinoa and Vegetables -->
+        <div class="recipe">
+            <h1>Grilled Chicken with Quinoa and Vegetables</h1>
+            <div class="recipe-content">
+                <img src="images/Grilled Chicken with Quinoa and Vegetables.jpg" alt="Grilled Chicken with Quinoa">
+                <div class="recipe-text">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>200g grilled chicken breast</li>
+                        <li>1 cup cooked quinoa</li>
+                        <li>1 cup sautéed vegetables (zucchini, carrots, bell peppers)</li>
+                        <li>Salt and pepper to taste</li>
+                    </ul>
+                    <h2>Procedure</h2>
+                    <p>Season chicken and grill on a stovetop. Serve with cooked quinoa and sautéed vegetables. Season to taste.</p>
+                    <h2>Macros</h2>
+                    <p>Protein: 40g, Carbs: 25g, Fat: 8g</p>
+                </div>
+            </div>
         </div>
 
-        <!-- Placeholder for Recipes -->
-        <div id="baked-salmon" class="recipe">
-    <img src="images/111.jpg" alt="Baked Salmon with Potatoes">
-    <h2>Baked Salmon with Potatoes</h2>
-    <p>A balanced dish of baked salmon served with roasted potatoes and asparagus.</p>
-    <ul>
-        <li>150g salmon fillet</li>
-        <li>150g baby potatoes, halved</li>
-        <li>1 cup steamed asparagus (100g)</li>
-        <li>1 tablespoon olive oil (15g)</li>
-        <li>Salt, pepper, and garlic powder to taste</li>
-    </ul>
-    <div class="macros">
-        <p><strong>Macros:</strong></p>
-        <p>Protein: 34g, Carbs: 39g, Fat: 24g</p>
-    </div>
-    <p><strong>Steps:</strong></p>
-    <p>Preheat the oven to 200°C (400°F). Season salmon with salt, pepper, and garlic powder. Toss potatoes with olive oil, salt, and pepper. Bake potatoes for 20 minutes, then add salmon and bake for 12–15 minutes more. Steam asparagus until tender and serve with salmon and potatoes.</p>
-</div>
+        <!-- Garlic Butter Shrimp with Zucchini Noodles -->
+        <div class="recipe">
+            <h1>Garlic Butter Shrimp with Zucchini Noodles</h1>
+            <div class="recipe-content">
+                <img src="images/Shrimp-Zucchini-Noodles.jpg" alt="Garlic Butter Shrimp">
+                <div class="recipe-text">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>200g shrimp, peeled and deveined</li>
+                        <li>2 zucchinis, spiralized</li>
+                        <li>1 tablespoon garlic butter</li>
+                        <li>Salt and pepper to taste</li>
+                    </ul>
+                    <h2>Procedure</h2>
+                    <p>Sauté shrimp in garlic butter until cooked. Toss zucchini noodles in the same pan until tender. Serve warm.</p>
+                    <h2>Macros</h2>
+                    <p>Protein: 30g, Carbs: 10g, Fat: 12g</p>
+                </div>
+            </div>
+        </div>
 
-<div id="turkey-burger-bowl" class="recipe">
-    <img src="images/222.jpg" alt="Turkey Burger Bowl">
-    <h2>Turkey Burger Bowl</h2>
-    <p>A hearty turkey burger served deconstructed with rice and veggies.</p>
-    <ul>
-        <li>100g turkey patty, cooked</li>
-        <li>1 cup cooked rice (150g)</li>
-        <li>1 cup sautéed zucchini (100g)</li>
-        <li>1 tablespoon BBQ sauce (15g)</li>
-    </ul>
-    <div class="macros">
-        <p><strong>Macros:</strong></p>
-        <p>Protein: 26g, Carbs: 54g, Fat: 4g</p>
-    </div>
-    <p><strong>Steps:</strong></p>
-    <p>Grill or pan-fry the turkey patty until cooked through. In a bowl, layer the cooked rice, sautéed zucchini, and turkey patty. Drizzle with BBQ sauce. Serve warm.</p>
-</div>
+        <!-- Beef and Vegetable Stir Fry -->
+        <div class="recipe">
+            <h1>Beef and Vegetable Stir Fry</h1>
+            <div class="recipe-content">
+                <img src="images/Beef-Stir-Fry-with-Vegetables.jpg" alt="Beef Stir Fry">
+                <div class="recipe-text">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>200g beef strips</li>
+                        <li>1 cup mixed vegetables (broccoli, carrots, snap peas)</li>
+                        <li>2 tablespoons soy sauce</li>
+                        <li>1 tablespoon sesame oil</li>
+                    </ul>
+                    <h2>Procedure</h2>
+                    <p>Stir-fry beef in sesame oil until browned. Add vegetables and soy sauce. Cook until tender. Serve warm.</p>
+                    <h2>Macros</h2>
+                    <p>Protein: 35g, Carbs: 10g, Fat: 12g</p>
+                </div>
+            </div>
+        </div>
 
-<div id="chickpea-curry" class="recipe">
-    <img src="images/333.jpg" alt="Vegetarian Chickpea Curry">
-    <h2>Vegetarian Chickpea Curry</h2>
-    <p>A creamy and flavorful curry made with chickpeas, coconut milk, and rice.</p>
-    <ul>
-        <li>1 cup cooked chickpeas (200g)</li>
-        <li>1 cup coconut milk (240ml)</li>
-        <li>1 cup cooked rice (150g)</li>
-        <li>1 tablespoon curry paste (15g)</li>
-        <li>1 cup broccoli florets (100g)</li>
-    </ul>
-    <div class="macros">
-        <p><strong>Macros:</strong></p>
-        <p>Protein: 23g, Carbs: 105g, Fat: 25g</p>
-    </div>
-    <p><strong>Steps:</strong></p>
-    <p>Heat curry paste in a skillet. Add coconut milk and stir well. Add chickpeas and broccoli, then simmer for 10–12 minutes. Serve curry over cooked rice and enjoy warm.</p>
-</div>
+        <!-- Chicken and Vegetable Curry -->
+        <div class="recipe">
+            <h1>Chicken and Vegetable Curry</h1>
+            <div class="recipe-content">
+                <img src="images/Chicken and Vegetable Curry.jpg" alt="Chicken Curry">
+                <div class="recipe-text">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>200g chicken breast, cubed</li>
+                        <li>1 cup coconut milk</li>
+                        <li>1 cup mixed vegetables (carrots, green beans, peas)</li>
+                        <li>2 tablespoons curry paste</li>
+                    </ul>
+                    <h2>Procedure</h2>
+                    <p>Sauté chicken until browned. Add vegetables, coconut milk, and curry paste. Simmer until cooked. Serve warm.</p>
+                    <h2>Macros</h2>
+                    <p>Protein: 30g, Carbs: 15g, Fat: 14g</p>
+                </div>
+            </div>
+        </div>
 
-<div id="grilled-chicken-veggies" class="recipe">
-    <img src="images/444.jpg" alt="Grilled Chicken with Veggies">
-    <h2>Grilled Chicken with Veggies</h2>
-    <p>A wholesome meal featuring grilled chicken with roasted sweet potatoes and carrots.</p>
-    <ul>
-        <li>150g grilled chicken breast</li>
-        <li>150g roasted sweet potatoes</li>
-        <li>100g roasted carrots</li>
-        <li>1 tablespoon olive oil (15g)</li>
-    </ul>
-    <div class="macros">
-        <p><strong>Macros:</strong></p>
-        <p>Protein: 49g, Carbs: 45g, Fat: 17g</p>
-    </div>
-    <p><strong>Steps:</strong></p>
-    <p>Grill chicken breast until fully cooked. Toss sweet potatoes and carrots with olive oil, then roast at 200°C (400°F) for 25 minutes. Serve grilled chicken with roasted vegetables.</p>
-</div>
+        <!-- Lemon Garlic Shrimp Pasta -->
+        <div class="recipe">
+            <h1>Lemon Garlic Shrimp Pasta</h1>
+            <div class="recipe-content">
+                <img src="images/Lemon-Garlic-Shrimp-Pasta.jpg" alt="Shrimp Pasta">
+                <div class="recipe-text">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>200g shrimp, peeled and deveined</li>
+                        <li>100g pasta</li>
+                        <li>1 tablespoon olive oil</li>
+                        <li>2 garlic cloves, minced</li>
+                        <li>Juice of 1 lemon</li>
+                    </ul>
+                    <h2>Procedure</h2>
+                    <p>Cook pasta. Sauté garlic in olive oil, add shrimp, and cook until pink. Stir in lemon juice and pasta. Serve warm.</p>
+                    <h2>Macros</h2>
+                    <p>Protein: 30g, Carbs: 40g, Fat: 10g</p>
+                </div>
+            </div>
+        </div>
 
-<div id="beef-stir-fry" class="recipe">
-    <img src="images/555.jpg" alt="Beef Stir-Fry">
-    <h2>Beef Stir-Fry</h2>
-    <p>A savory stir-fry with beef, mixed vegetables, and rice.</p>
-    <ul>
-        <li>100g beef strips</li>
-        <li>1 cup cooked rice (150g)</li>
-        <li>1 cup mixed vegetables (100g)</li>
-        <li>1 tablespoon soy sauce (15ml)</li>
-    </ul>
-    <div class="macros">
-        <p><strong>Macros:</strong></p>
-        <p>Protein: 30g, Carbs: 54g, Fat: 5g</p>
-    </div>
-    <p><strong>Steps:</strong></p>
-    <p>Heat a skillet over medium-high heat. Stir-fry beef strips until browned, then remove and set aside. Stir-fry mixed vegetables until tender-crisp. Return beef to the skillet and add soy sauce. Serve over cooked rice.</p>
-</div>
+        <!-- Additional Recipes -->
+        <!-- Add similar blocks for Stuffed Bell Peppers, Chicken Fajitas, Lentil Curry, Tofu Stir Fry, Beef and Broccoli -->
+                 <!-- Stuffed Bell Peppers -->
+        <div class="recipe">
+            <h1>Stuffed Bell Peppers</h1>
+            <div class="recipe-content">
+                <img src="images/Stuffed Bell Peppers.jpg" alt="Stuffed Bell Peppers">
+                <div class="recipe-text">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>3 large bell peppers</li>
+                        <li>200g ground beef</li>
+                        <li>1 cup cooked rice</li>
+                        <li>1 tablespoon tomato paste</li>
+                        <li>Salt and pepper to taste</li>
+                    </ul>
+                    <h2>Procedure</h2>
+                    <p>Cut tops off bell peppers and remove seeds. Cook ground beef in a skillet, then mix with rice and tomato paste. Stuff peppers with the mixture, place in a skillet with a lid, and cook over low heat for 15-20 minutes. Serve warm.</p>
+                    <h2>Macros</h2>
+                    <p>Protein: 25g, Carbs: 20g, Fat: 10g</p>
+                </div>
+            </div>
+        </div>
 
-    
+        <!-- Chicken Fajitas -->
+        <div class="recipe">
+            <h1>Chicken Fajitas</h1>
+            <div class="recipe-content">
+                <img src="images/Chicken Fajitas.jpg" alt="Chicken Fajitas">
+                <div class="recipe-text">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>200g chicken breast, sliced</li>
+                        <li>1 bell pepper, sliced</li>
+                        <li>1 onion, sliced</li>
+                        <li>1 tablespoon fajita seasoning</li>
+                        <li>4 small tortillas</li>
+                    </ul>
+                    <h2>Procedure</h2>
+                    <p>Sauté chicken with fajita seasoning in a skillet. Add peppers and onions and cook until tender. Serve with warm tortillas.</p>
+                    <h2>Macros</h2>
+                    <p>Protein: 30g, Carbs: 40g, Fat: 8g</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lentil Curry -->
+        <div class="recipe">
+            <h1>Vegetarian Lentil Curry</h1>
+            <div class="recipe-content">
+                <img src="images/Lentil-Curry-With-Coconut.jpg" alt="Lentil Curry">
+                <div class="recipe-text">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>1 cup cooked lentils</li>
+                        <li>1 cup coconut milk</li>
+                        <li>1 cup diced tomatoes</li>
+                        <li>1 tablespoon curry powder</li>
+                        <li>Salt to taste</li>
+                    </ul>
+                    <h2>Procedure</h2>
+                    <p>Combine lentils, coconut milk, tomatoes, and curry powder in a saucepan. Simmer over medium heat for 15 minutes. Serve over rice.</p>
+                    <h2>Macros</h2>
+                    <p>Protein: 18g, Carbs: 35g, Fat: 10g</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tofu Stir Fry -->
+        <div class="recipe">
+            <h1>Teriyaki Tofu Stir Fry</h1>
+            <div class="recipe-content">
+                <img src="images/Tofu-Vegan-Stir-Fry01030.jpg" alt="Tofu Stir Fry">
+                <div class="recipe-text">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>200g firm tofu, cubed</li>
+                        <li>1 cup mixed vegetables</li>
+                        <li>2 tablespoons teriyaki sauce</li>
+                        <li>1 tablespoon sesame oil</li>
+                    </ul>
+                    <h2>Procedure</h2>
+                    <p>Pan-fry tofu in sesame oil until golden. Add vegetables and teriyaki sauce, then cook until tender. Serve warm.</p>
+                    <h2>Macros</h2>
+                    <p>Protein: 20g, Carbs: 15g, Fat: 12g</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Beef and Broccoli Stir Fry -->
+        <div class="recipe">
+            <h1>Beef and Broccoli Stir Fry</h1>
+            <div class="recipe-content">
+                <img src="images/Beef-and-Broccoli.jpg" alt="Beef and Broccoli Stir Fry">
+                <div class="recipe-text">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>200g beef strips</li>
+                        <li>1 cup broccoli florets</li>
+                        <li>2 tablespoons soy sauce</li>
+                        <li>1 tablespoon sesame oil</li>
+                    </ul>
+                    <h2>Procedure</h2>
+                    <p>Cook beef in sesame oil until browned. Add broccoli and soy sauce, then cook until tender. Serve warm.</p>
+                    <h2>Macros</h2>
+                    <p>Protein: 30g, Carbs: 10g, Fat: 10g</p>
+                </div>
+            </div>
+        </div>
 
     </div>
+
+    <!-- JavaScript for Navbar -->
+    <script>
+        const menuButton = document.querySelector('.menu-button');
+        const navLinks = document.querySelector('.navbar ul');
+
+        menuButton.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>

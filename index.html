@@ -3,119 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cookbook for Claudia</title>
-    <!-- Import Roboto Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Roboto', Arial, sans-serif;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        .full-screen {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: url('images/main_page.jpg') no-repeat center center/cover;
-            position: relative;
-        }
-
-        .white-overlay {
-            background: rgba(255, 255, 255, 0.9);
-            width: 50%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 20px;
-            box-shadow: -10px 0 20px rgba(0, 0, 0, 0.1);
-            font-family: 'Roboto Slab', serif; /* Change to Roboto Slab for title area */
-        }
-
-        .white-overlay h1 {
-            color: #333;
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-
-        .white-overlay p {
-            font-size: 1.2rem;
-            color: #555;
-            line-height: 1.8;
-        }
-
-        .scroll-section {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background: #fdf6e3;
-            font-family: 'Roboto Condensed', sans-serif; /* Change to Roboto Condensed */
-        }
-
-        .scroll-section h2 {
-            font-size: 2rem;
-            color: #b58900;
-            margin-bottom: 20px;
-        }
-
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .links a {
-            text-decoration: none;
-            font-size: 1.5rem;
-            color: #268bd2;
-            transition: color 0.3s;
-            font-family: 'Roboto', sans-serif; /* Default Roboto for links */
-        }
-
-        .links a:hover {
-            color: #2aa198;
-        }
-
-        @media (max-width: 768px) {
-            .full-screen {
-                flex-direction: column;
-            }
-
-            .white-overlay {
-                width: 100%;
-                height: 50%;
-                box-shadow: none;
-            }
-        }
-    </style>
+    <title>Claudia's Cookbook</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="full-screen">
-        <div class="white-overlay">
-            <h1>Cookbook for Claudia</h1>
-            <p>Welcome to a personalized collection of delicious recipes. Scroll down to explore breakfast, lunch, and dinner options that are easy to follow and perfect for any occasion!</p>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <button class="menu-button">☰ Menu</button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="breakfast_options.html">Breakfast</a></li>
+            <li><a href="lunch_options.html">Lunch</a></li>
+            <li><a href="dinner_options.html">Dinner</a></li>
+            <li><a href="dessert_options.html">Dessert</a></li>
+            <li><a href="food_list.html">Macros</a></li>
+            <li><a href="weekly_grocery.html">Grocery List</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <img src="images/main_page.jpg" alt="Main Page Image">
+        <div class="hero-text">
+            <h1>Welcome to Claudia's Cookbook</h1>
+            <h2 href="https://github.com/DaurenYedres">Made by Dauren</h2>
+            <p>Your one-stop source for delicious recipes, nutritional guides, and meal ideas.</p>
+        </div>
+    </div>
+    
+
+    <!-- Main Section with Links -->
+    <div class="section-links">
+        <h2>Explore Our Sections</h2>
+        <div class="card-container">
+            <div class="card">
+                <a href="breakfast_options.html">Breakfast Options</a>
+            </div>
+            <div class="card">
+                <a href="lunch_options.html">Lunch Options</a>
+            </div>
+            <div class="card">
+                <a href="dinner_options.html">Dinner Options</a>
+            </div>
+            <div class="card">
+                <a href="dessert_options.html">Dessert Options</a>
+            </div>
+            <div class="card">
+                <a href="food_list.html">Macros & Nutrition</a>
+            </div>
+            <div class="card">
+                <a href="weekly_grocery.html">Weekly Grocery Suggestions</a>
+            </div>
+            
         </div>
     </div>
 
-    <div class="scroll-section" id="links">
-        <h2>Explore Recipes</h2>
-        <div class="links">
-            <a href="breakfast_options.html">Breakfast Options</a>
-            <a href="lunch_options.html">Lunch Options</a>
-            <a href="dinner_options.html">Dinner Options</a>
-            <a href="dessert_options.html">Dessert Options</a>
-            <a href="food_list.html">Macros for different Food</a>
-        </div>
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Claudia's Cookbook. All rights reserved.</p>
     </div>
+
+    <!-- JavaScript for Navbar -->
+    <script>
+        const menuButton = document.querySelector('.menu-button');
+        const navLinks = document.querySelector('.navbar ul');
+
+        menuButton.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>

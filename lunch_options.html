@@ -4,233 +4,226 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lunch Options</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Condensed:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Roboto', Arial, sans-serif;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .recipe-list {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .recipe-list h1 {
-            font-family: 'Roboto Slab', serif;
-            font-size: 2.5rem;
-            color: #b58900;
-            margin-bottom: 20px;
-        }
-
-        .recipe-list ul {
-            list-style: none;
-        }
-
-        .recipe-list ul li {
-            font-size: 1.5rem;
-            margin: 10px 0;
-        }
-
-        .recipe-list ul li a {
-            text-decoration: none;
-            color: #268bd2;
-            transition: color 0.3s;
-        }
-
-        .recipe-list ul li a:hover {
-            color: #2aa198;
-        }
-
-        .recipe {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 50px;
-            text-align: center;
-        }
-
-        .recipe:nth-child(odd) {
-            background: #fff4e6;
-        }
-
-        .recipe:nth-child(even) {
-            background: #fdf6e3;
-        }
-
-        .recipe img {
-            max-width: 80%;
-            height: auto;
-            margin-bottom: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .recipe h2 {
-            font-family: 'Roboto Slab', serif;
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: #b58900;
-        }
-
-        .recipe p {
-            font-size: 1.2rem;
-            color: #555;
-            line-height: 1.8;
-            margin-bottom: 20px;
-        }
-
-        .recipe ul {
-            list-style: none;
-            margin-bottom: 20px;
-        }
-
-        .recipe ul li {
-            font-size: 1.2rem;
-            color: #333;
-        }
-
-        .macros {
-            font-size: 1.2rem;
-            color: #333;
-            margin-bottom: 20px;
-        }
-
-        .recipe a {
-            text-decoration: none;
-            font-size: 1.2rem;
-            color: #268bd2;
-        }
-
-        @media (max-width: 768px) {
-            .recipe img {
-                max-width: 100%;
-            }
-
-            .recipe {
-                padding: 20px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="recipe-list">
-            <h1>Lunch Options</h1>
-            <ul>
-                <li><a href="#chicken-caesar">Chicken Caesar Salad</a></li>
-                <li><a href="#turkey-wrap">Turkey or Beef Wrap</a></li>
-                <li><a href="#lentil-bowl">Lentil & Rice Bowl</a></li>
-                <li><a href="#shrimp-stirfry">Shrimp & Veggie Stir-Fry</a></li>
-                <li><a href="#chicken-pasta">Chicken & Pasta Salad</a></li>
-            </ul>
-        </div>
-
-        <div id="chicken-caesar" class="recipe">
-            <img src="images/Caesar-Pasta-Salad-Recipe-9.jpg" alt="Chicken Caesar Salad">
-            <h2>Chicken Caesar Salad</h2>
-            <p>A classic Caesar salad topped with grilled chicken, crunchy croutons, and creamy dressing.</p>
-            <ul>
-                <li>100g grilled chicken breast</li>
-                <li>2 cups romaine lettuce (80g), chopped</li>
-                <li>¼ cup croutons (15g)</li>
-                <li>2 tablespoons dairy-free Caesar dressing (30g)</li>
-                <li>Optional: 1 tablespoon grated dairy-free cheese (10g)</li>
-            </ul>
-            <div class="macros">
-                <p><strong>Macros:</strong></p>
-                <p>Protein: 35g, Carbs: 20g, Fat: 8g</p>
-            </div>
-            <p><strong>Steps:</strong></p>
-            <p>Slice grilled chicken. Toss lettuce, croutons, and dressing in a bowl. Top with chicken and serve immediately.</p>
-        </div>
-
-        <div id="turkey-wrap" class="recipe">
-            <img src="images/Tantuni-Wraps-8.jpg" alt="Turkey or Beef Wrap">
-            <h2>Turkey or Beef Wrap</h2>
-            <p>A hearty wrap filled with your choice of turkey or beef, fresh veggies, and a creamy spread.</p>
-            <ul>
-                <li>100g ground turkey or beef, cooked</li>
-                <li>1 large tortilla wrap (50g)</li>
-                <li>1 cup mixed vegetables (lettuce, tomato, cucumber, 80g)</li>
-                <li>1 tablespoon hummus or dairy-free mayo (15g)</li>
-            </ul>
-            <div class="macros">
-                <p><strong>Macros:</strong></p>
-                <p>Protein: 25g, Carbs: 40g, Fat: 10g</p>
-            </div>
-            <p><strong>Steps:</strong></p>
-            <p>Cook turkey or beef. Spread hummus on the wrap, layer with protein and veggies, fold, and serve.</p>
-        </div>
-
-        <div id="lentil-bowl" class="recipe">
-            <img src="images/rice-and-French-lentils-in-bowl-with-parsley.jpg" alt="Lentil & Rice Bowl">
-            <h2>Lentil & Rice Bowl</h2>
-            <p>A nutritious bowl combining protein-packed lentils, rice, and sautéed spinach.</p>
-            <ul>
-                <li>1 cup cooked lentils (200g)</li>
-                <li>1 cup cooked rice (150g)</li>
-                <li>1 cup sautéed spinach (100g)</li>
-                <li>Optional: 1 tablespoon olive oil (15g)</li>
-            </ul>
-            <div class="macros">
-                <p><strong>Macros:</strong></p>
-                <p>Protein: 20g, Carbs: 70g, Fat: 10g</p>
-            </div>
-            <p><strong>Steps:</strong></p>
-            <p>Combine lentils, rice, and spinach in a bowl. Drizzle with olive oil if desired. Mix and serve warm.</p>
-        </div>
-
-        <div id="shrimp-stirfry" class="recipe">
-            <img src="images/shrimp.jpg" alt="Shrimp & Veggie Stir-Fry">
-            <h2>Shrimp & Veggie Stir-Fry</h2>
-            <p>A quick and delicious stir-fry with tender shrimp and colorful vegetables.</p>
-            <ul>
-                <li>150g shrimp, peeled and deveined</li>
-                <li>1 cup cooked rice (150g)</li>
-                <li>1 cup stir-fried vegetables (100g)</li>
-                <li>1 tablespoon soy sauce (15ml)</li>
-            </ul>
-            <div class="macros">
-                <p><strong>Macros:</strong></p>
-                <p>Protein: 30g, Carbs: 50g, Fat: 12g</p>
-            </div>
-            <p><strong>Steps:</strong></p>
-            <p>Cook shrimp in a hot skillet. Add vegetables and soy sauce. Serve over cooked rice.</p>
-        </div>
-
-        <div id="chicken-pasta" class="recipe">
-            <img src="images/chicken-pasta-salad-5.jpg" alt="Chicken & Pasta Salad">
-            <h2>Chicken & Pasta Salad</h2>
-            <p>A refreshing salad combining grilled chicken, pasta, and a medley of vegetables.</p>
-            <ul>
-                <li>100g grilled chicken breast</li>
-                <li>1 cup cooked pasta (150g)</li>
-                <li>1 cup chopped vegetables (100g)</li>
-                <li>1 tablespoon olive oil dressing (15g)</li>
-            </ul>
-            <div class="macros">
-                <p><strong>Macros:</strong></p>
-                <p>Protein: 35g, Carbs: 55g, Fat: 10g</p>
-            </div>
-            <p><strong>Steps:</strong></p>
-            <p>Toss cooked pasta, veggies, and dressing in a bowl. Top with grilled chicken and serve.</p>
-        </div>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <button class="menu-button">☰ Menu</button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="breakfast_options.html">Breakfast</a></li>
+            <li><a href="dinner_options.html">Dinner</a></li>
+            <li><a href="dessert_options.html">Dessert</a></li>
+            <li><a href="food_list.html">Macros</a></li>
+            <li><a href="weekly_grocery.html">Grocery List</a></li>
+        </ul>
     </div>
+
+    <!-- Lunch Recipes -->
+    <div class="container">
+        <!-- Ground Beef Stir Fry -->
+        <div class="recipe">
+            <h1>Ground Beef Stir Fry</h1>
+            <div class="recipe-content">
+                <img src="images/ground-beef-stir-fry-1.jpg" alt="Ground Beef Stir Fry">
+                <div class="recipe-text">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>200g ground beef</li>
+                        <li>1 cup mixed vegetables (broccoli, bell peppers, carrots)</li>
+                        <li>2 tablespoons soy sauce</li>
+                        <li>1 tablespoon sesame oil</li>
+                    </ul>
+                    <h2>Procedure</h2>
+                    <p>Cook ground beef in a skillet. Add vegetables, soy sauce, and sesame oil. Cook until tender. Serve warm.</p>
+                    <h2>Macros</h2>
+                    <p>Protein: 30g, Carbs: 15g, Fat: 12g</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Korean-Inspired Ground Beef Bowls -->
+        <div class="recipe">
+            <h1>Korean-Inspired Ground Beef Bowls</h1>
+            <div class="recipe-content">
+                <img src="images/Korean-Beef-Bowl.jpg" alt="Korean Ground Beef Bowls">
+                <div class="recipe-text">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>200g ground beef</li>
+                        <li>1 cup cooked rice</li>
+                        <li>1 tablespoon gochujang sauce</li>
+                        <li>1 cup steamed vegetables</li>
+                    </ul>
+                    <h2>Procedure</h2>
+                    <p>Cook ground beef with gochujang sauce. Serve over rice with steamed vegetables. Garnish with sesame seeds.</p>
+                    <h2>Macros</h2>
+                    <p>Protein: 28g, Carbs: 45g, Fat: 10g</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Healthy Sweet and Sour Chicken -->
+        <div class="recipe">
+            <h1>Healthy Sweet and Sour Chicken</h1>
+            <div class="recipe-content">
+                <img src="images/healthy-sweet-and-sour-chicken_web-7.jpg" alt="Sweet and Sour Chicken">
+                <div class="recipe-text">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>200g chicken breast, cubed</li>
+                        <li>1 bell pepper, sliced</li>
+                        <li>½ cup pineapple chunks</li>
+                        <li>2 tablespoons sweet and sour sauce</li>
+                    </ul>
+                    <h2>Procedure</h2>
+                    <p>Cook chicken in a skillet. Add bell pepper and pineapple, then stir in sweet and sour sauce. Cook until heated through. Serve with rice or noodles.</p>
+                    <h2>Macros</h2>
+                    <p>Protein: 25g, Carbs: 20g, Fat: 5g</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cheesy Chicken Skillet with Broccoli and Rice -->
+        <div class="recipe">
+            <h1>Cheesy Chicken Skillet with Broccoli and Rice</h1>
+            <div class="recipe-content">
+                <img src="images/Cheesy-Chicken-Broccoli-Rice-Skillet-photo-5611.jpg" alt="Cheesy Chicken Skillet">
+                <div class="recipe-text">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>200g chicken breast, cubed</li>
+                        <li>1 cup cooked rice</li>
+                        <li>1 cup broccoli florets</li>
+                        <li>½ cup shredded cheddar cheese</li>
+                    </ul>
+                    <h2>Procedure</h2>
+                    <p>Cook chicken in a skillet. Add broccoli and rice. Stir in cheese until melted. Serve warm.</p>
+                    <h2>Macros</h2>
+                    <p>Protein: 30g, Carbs: 35g, Fat: 12g</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Teriyaki Salmon Bowls -->
+        <div class="recipe">
+            <h1>Teriyaki Salmon Bowls</h1>
+            <div class="recipe-content">
+                <img src="images/Teriyaki-Salmon-Bowls-5.jpg" alt="Teriyaki Salmon Bowls">
+                <div class="recipe-text">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>200g salmon fillet</li>
+                        <li>2 tablespoons teriyaki sauce</li>
+                        <li>1 cup cooked rice</li>
+                        <li>1 cup steamed vegetables</li>
+                    </ul>
+                    <h2>Procedure</h2>
+                    <p>Grill or pan-fry salmon. Brush with teriyaki sauce. Serve over rice with steamed vegetables.</p>
+                    <h2>Macros</h2>
+                    <p>Protein: 35g, Carbs: 40g, Fat: 15g</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tuna Salad Wraps -->
+        <div class="recipe">
+            <h1>Tuna Salad Wraps</h1>
+            <div class="recipe-content">
+                <img src="images/Tuna-Wraps.jpg" alt="Tuna Salad Wraps">
+                <div class="recipe-text">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>1 can tuna in water, drained (150g)</li>
+                        <li>2 tablespoons Greek yogurt</li>
+                        <li>1 large tortilla wrap</li>
+                        <li>1 cup mixed greens</li>
+                    </ul>
+                    <h2>Procedure</h2>
+                    <p>Mix tuna with Greek yogurt. Spread on tortilla, add greens, and wrap tightly. Serve cold.</p>
+                    <h2>Macros</h2>
+                    <p>Protein: 30g, Carbs: 20g, Fat: 5g</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tofu and Vegetable Stir Fry -->
+        <div class="recipe">
+            <h1>Tofu and Vegetable Stir Fry</h1>
+            <div class="recipe-content">
+                <img src="images/Tofu-Vegan-Stir-Fry01030.jpg" alt="Tofu Stir Fry">
+                <div class="recipe-text">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>200g firm tofu, cubed</li>
+                        <li>1 cup mixed vegetables</li>
+                        <li>2 tablespoons soy sauce</li>
+                        <li>1 tablespoon sesame oil</li>
+                    </ul>
+                    <h2>Procedure</h2>
+                    <p>Pan-fry tofu until golden. Add vegetables, soy sauce, and sesame oil. Cook until tender. Serve warm.</p>
+                    <h2>Macros</h2>
+                    <p>Protein: 20g, Carbs: 15g, Fat: 12g</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Egg Roll in a Bowl -->
+        <div class="recipe">
+            <h1>Egg Roll in a Bowl</h1>
+            <div class="recipe-content">
+                <img src="images/egg-roll-bowl.jpg" alt="Egg Roll in a Bowl">
+                <div class="recipe-text">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>200g ground pork or turkey</li>
+                        <li>2 cups shredded cabbage</li>
+                        <li>1 carrot, julienned</li>
+                        <li>2 tablespoons soy sauce</li>
+                    </ul>
+                    <h2>Procedure</h2>
+                    <p>Cook ground meat in a skillet. Add cabbage, carrots, and soy sauce. Stir-fry until tender. Serve warm.</p>
+                    <h2>Macros</h2>
+                    <p>Protein: 25g, Carbs: 15g, Fat: 12g</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Asian Chicken Salad -->
+        <div class="recipe">
+            <h1>Asian Chicken Salad</h1>
+            <div class="recipe-content">
+                <img src="images/asian-chicken-salad.jpg" alt="Asian Chicken Salad">
+                <div class="recipe-text">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>200g shredded chicken breast</li>
+                        <li>2 cups shredded cabbage</li>
+                        <li>1 cup julienned carrots</li>
+                        <li>2 tablespoons sesame dressing</li>
+                    </ul>
+                    <h2>Procedure</h2>
+                    <p>Combine chicken, cabbage, and carrots in a bowl. Toss with sesame dressing. Serve chilled.</p>
+                    <h2>Macros</h2>
+                    <p>Protein: 25g, Carbs: 20g, Fat: 8g</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Meals (Repeat similar blocks as above) -->
+    </div>
+
+    <!-- JavaScript for Navbar -->
+    <script>
+        const menuButton = document.querySelector('.menu-button');
+        const navLinks = document.querySelector('.navbar ul');
+
+        menuButton.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>

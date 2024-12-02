@@ -1,0 +1,346 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf6e3; /* Matches the design for Food List */
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    color: #CC313D; /* Cherry red for headings */
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* Category Links */
+.category-nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.category-nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #268bd2; /* Soft blue for links */
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.category-nav a:hover {
+    background-color: #CC313D;
+    color: #fff;
+}
+/* Container for Consistent Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #CC313D; /* Cherry Red */
+    color: #F7C5CC; /* Bubblegum Pink for text */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #CC313D;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #F7C5CC; /* Bubblegum Pink for text */
+    font-family: 'Roboto Slab', serif; /* Match font to the rest of the site */
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #CC313D; /* Cherry Red on hover */
+}
+
+
+.navbar ul.show {
+    display: flex; /* Show on toggle */
+}
+
+.navbar .menu-button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #F7C5CC;
+    background: none;
+    border: none;
+}
+/* Meal Prep Section Styling with Consistent Width */
+#meal-prep, #meal-prep-week1, #meal-prep-week2, #meal-prep-week3 {
+    background-color: #F7C5CC; /* Bubblegum pink background */
+    border: 2px solid #CC313D; /* Cherry red border */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto; /* Center the section */
+    width: 90%; /* Adjust width to match tables */
+    max-width: 800px; /* Consistent max width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#meal-prep h2, #meal-prep h3 {
+    color: #CC313D; /* Cherry red text color */
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#meal-prep ul, #meal-prep p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333; /* Neutral text color */
+}
+
+#meal-prep ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+#meal-prep ul li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden; /* Ensures image doesn't extend beyond boundaries */
+}
+
+.hero img {
+    width: 100%; /* Full width for responsiveness */
+    height: 100%; /* Stretch to fill the hero section */
+    object-fit: cover; /* Crop image for a visually pleasing fit */
+    filter: brightness(70%); /* Darkens the image for better text visibility */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    color: #CC313D; /* Cherry Red text */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto Slab', serif;
+}
+
+
+/* Section Links */
+.section-links {
+    text-align: center;
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column; /* Arrange cards vertically */
+    align-items: center; /* Center-align the cards */
+    gap: 20px; /* Spacing between cards */
+}
+
+.card {
+    background-color: #F7C5CC; /* Bubblegum Pink */
+    border: 1px solid #CC313D; /* Cherry Red */
+    padding: 20px;
+    width: 80%; /* Adjust width to fit vertically */
+    max-width: 400px; /* Limit width for larger screens */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.card a {
+    display: block;
+    margin: 10px 0; /* Spacing between links */
+    text-decoration: none;
+    color: #CC313D; /* Cherry Red for text */
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.card a:hover {
+    color: #F7C5CC; /* Hover to Bubblegum Pink */
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #CC313D;
+    color: #F7C5CC;
+}
+/* Recipe Section */
+.recipe {
+    background-color: #F7C5CC; /* Bubblegum Pink */
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.recipe h1 {
+    font-size: 2.5rem;
+    color: #CC313D; /* Cherry Red */
+    margin-bottom: 20px;
+}
+
+.recipe-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.recipe-content img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-text {
+    width: 50%;
+    text-align: left;
+}
+
+.recipe-text h2 {
+    font-size: 1.5rem;
+    color: #CC313D; /* Cherry Red */
+    margin-top: 20px;
+}
+
+.recipe-text ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.recipe-text ul li, .recipe-text p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    border: 1px solid #e0d7c5;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #e0d7c5;
+}
+
+thead {
+    background-color: #F7C5CC; /* Bubblegum pink */
+    color: #CC313D; /* Cherry red */
+    font-weight: bold;
+}
+
+tbody tr {
+    background-color: white; /* Simple rows with white background */
+}
+
+tbody tr:hover {
+    background-color: #fff7db; /* Subtle highlight effect */
+}
+
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+    .recipe-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recipe-content img {
+        width: 80%; /* Adjust for mobile view */
+    }
+
+    .recipe-text {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .hero-text {
+        font-size: 1.2rem;
+    }
+}
